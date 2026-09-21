@@ -1,0 +1,56 @@
+name: Deploy static site to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify expected site routes
+        shell: bash
+        run: |
+          test -f index.html
+          test -f employers/index.html
+          test -f recruiting-firms/index.html
+          test -f ats-integration/index.html
+          test -f hr-tech/index.html
+
+      - name: Prepare deployment directory
+        shell: bash
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -R employers _site/
+          cp -R recruiting-firms _site/
+          cp -R ats-integration _site/
+          cp -R hr-tech _site/
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
