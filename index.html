@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/><meta charset="utf-8"/>
+<title>AI Talent Partner / AI Sourcing</title>
+<style>
+  
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; width:1440px; height:900px; }
+  body { font-family: Arial, Helvetica, sans-serif; background:#F9F9F9; color:#2E2E2E; }
+  .page { width:1440px; height:900px; position:relative; overflow:hidden; background:#F9F9F9; }
+  .top-rule { position:absolute; top:0; left:0; right:0; height:9px; background:#1C2D4A; }
+  .accent-rule { position:absolute; top:9px; left:0; width:250px; height:4px; background:#B94D3A; }
+  header { position:absolute; left:84px; right:84px; top:40px; height:78px; display:flex; align-items:center; justify-content:space-between; }
+  .brand { display:flex; align-items:center; gap:18px; }
+  .brand img { width:54px; height:54px; object-fit:contain; }
+  .brand-text { font-size:17px; font-weight:700; color:#1C2D4A; letter-spacing:1.7px; }
+  .brand-text small { display:block; margin-top:4px; font-size:10px; font-weight:700; color:#A7A9AC; letter-spacing:1.45px; }
+  .context { font-size:11px; text-transform:uppercase; letter-spacing:1.5px; color:#A7A9AC; font-weight:700; }
+  main { position:absolute; left:84px; right:84px; top:145px; bottom:68px; }
+  .hero { text-align:center; max-width:930px; margin:0 auto; }
+  .eyebrow { font-size:12px; letter-spacing:2.0px; color:#B94D3A; font-weight:800; text-transform:uppercase; margin-bottom:13px; }
+  h1 { margin:0; font-size:54px; line-height:1.03; color:#1C2D4A; letter-spacing:-1.2px; }
+  .sub { margin:17px auto 0; max-width:820px; font-size:18px; line-height:1.45; color:#5C636B; }
+  .sub strong { color:#1C2D4A; }
+  .cards { margin:45px auto 0; max-width:1120px; display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .card { background:#fff; border:1px solid #E0E4E8; min-height:214px; padding:26px 28px 24px; display:grid; grid-template-columns:58px 1fr 84px; gap:18px; align-items:start; position:relative; box-shadow:0 5px 18px rgba(28,45,74,0.06); }
+  .card:before { content:""; position:absolute; left:0; top:0; bottom:0; width:5px; background:#1C2D4A; }
+  .card.employer:before { background:#B94D3A; }
+  .icon { width:52px; height:52px; border-radius:50%; background:#EEF1F4; display:flex; align-items:center; justify-content:center; }
+  .icon svg { width:28px; height:28px; stroke:#1C2D4A; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  .card-title { font-size:21px; font-weight:800; color:#1C2D4A; line-height:1.12; margin:0 0 7px; }
+  .label { font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:1.05px; color:#B94D3A; margin-bottom:11px; }
+  .hook { font-size:14.5px; line-height:1.38; color:#474E55; max-width:390px; }
+  .hook b { color:#1C2D4A; }
+  .go { align-self:center; justify-self:end; border:1.5px solid #1C2D4A; color:#1C2D4A; background:#fff; border-radius:3px; font-size:12px; font-weight:800; padding:11px 12px; min-width:78px; text-align:center; }
+  .employer .go { border-color:#B94D3A; color:#B94D3A; }
+  footer { position:absolute; left:84px; right:84px; bottom:23px; display:flex; justify-content:space-between; font-size:10px; color:#92979D; letter-spacing:.2px; }
+  .small-link { color:#7E858C; }
+</style>
+<style>
+/* Responsive web override for the intent router */
+html,body{width:100%!important;height:auto!important;min-height:100%!important}.page{width:100%!important;height:auto!important;min-height:100vh!important;overflow:visible!important;padding-bottom:28px}.top-rule,.accent-rule{position:fixed;z-index:10}header{position:relative!important;left:auto!important;right:auto!important;top:auto!important;height:auto!important;margin:0 auto;padding:34px 5vw 20px;max-width:1440px}main{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;padding:12px 5vw 36px}.cards{max-width:1120px}.card-link{text-decoration:none;color:inherit;display:block}.card{height:100%}footer{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;max-width:1272px;margin:0 auto;padding:0 5vw 18px}.go{display:inline-block}
+@media(max-width:900px){.cards{grid-template-columns:1fr!important}.hero h1{font-size:44px}.sub{font-size:17px}.context{display:none}.card{grid-template-columns:52px 1fr auto!important}.brand-text{font-size:14px}}
+@media(max-width:560px){header{padding-top:30px}.brand img{width:46px;height:46px}.brand-text{font-size:12px}.brand-text small{font-size:8px}.hero h1{font-size:36px}.cards{margin-top:30px}.card{grid-template-columns:44px 1fr!important}.icon{width:44px;height:44px}.go{grid-column:2;justify-self:start;margin-top:4px}.card-title{font-size:19px}}
+</style></head>
+<body>
+<div class="page">
+<div class="top-rule"></div><div class="accent-rule"></div>
+<header>
+<a class="brand" href="./" style="text-decoration:none">
+<img alt="Volker Dahm logo" loading="lazy" src="assets/logo-vd-email.png"/>
+<div class="brand-text">AI SOURCING / AI TALENT PARTNER<small>RECRUITING SOLUTIONS. NOT ANOTHER SOFTWARE TOOL.</small></div>
+</a>
+<div class="context">Intent Router</div>
+</header>
+<main>
+<section class="hero">
+<div class="eyebrow">Choose the path that fits you</div>
+<h1>What outcome do you need?</h1>
+<div class="sub">Managed recruiting capability built around your workflow. <strong>AI Sourcing is the method; candidate outcomes are the solution.</strong></div>
+</section>
+<section class="cards">
+<a aria-label="I need to hire" class="card-link" href="employers/"><div class="card employer">
+<div class="icon"><svg viewbox="0 0 32 32"><circle cx="12" cy="10" r="5"></circle><path d="M3 27c1-6 5-9 9-9s8 3 9 9"></path><path d="M22 15h7M25.5 11.5v7"></path></svg></div>
+<div>
+<div class="card-title">I need to hire</div>
+<div class="label">AI Talent Partner for Employers</div>
+<div class="hook"><b>Ready-to-interview candidates</b> across Scale, Professional and Hard-to-Find hiring - sourced, enriched and human verified.</div>
+</div>
+<div class="go">OPEN →</div>
+</div></a>
+<a aria-label="I run a recruiting firm" class="card-link" href="recruiting-firms/"><div class="card">
+<div class="icon"><svg viewbox="0 0 32 32"><circle cx="10" cy="10" r="4"></circle><circle cx="22" cy="11" r="4"></circle><path d="M3 27c1-5 4-8 8-8 3 0 6 2 7 5"></path><path d="M17 27c1-5 4-8 8-8 3 0 5 2 6 5"></path></svg></div>
+<div>
+<div class="card-title">I run a recruiting firm</div>
+<div class="label">AI Sourcing for Recruiting Firms</div>
+<div class="hook"><b>Enriched candidate profiles</b> or <b>ready-to-interview candidates</b>. Your brand, your client, your process.</div>
+</div>
+<div class="go">OPEN →</div>
+</div></a>
+<a aria-label="I operate an ATS" class="card-link" href="ats-integration/"><div class="card">
+<div class="icon"><svg viewbox="0 0 32 32"><rect height="22" rx="2" width="22" x="5" y="5"></rect><path d="M9 11h14M9 16h8M9 21h11"></path></svg></div>
+<div>
+<div class="card-title">I operate an ATS</div>
+<div class="label">AI Sourcing for ATS</div>
+<div class="hook"><b>Enriched candidate profiles</b> or <b>interview-ready candidates with CVs</b> delivered directly into your ATS.</div>
+</div>
+<div class="go">OPEN →</div>
+</div></a>
+<a aria-label="I build HR technology" class="card-link" href="hr-tech/"><div class="card">
+<div class="icon"><svg viewbox="0 0 32 32"><path d="M6 8h8v8H6zM18 8h8v8h-8zM12 20h8v7h-8z"></path><path d="M10 16v4M22 16v4M10 20h12"></path></svg></div>
+<div>
+<div class="card-title">I build HR technology</div>
+<div class="label">AI Sourcing for HR Tech</div>
+<div class="hook">Add <b>candidate outcomes</b> to your product - enriched profiles or interview-ready candidates - without building a recruiting operation.</div>
+</div>
+<div class="go">OPEN →</div>
+</div></a>
+</section>
+</main>
+<footer>
+<div>AI Sourcing / AI Talent Partner · Intent Router</div>
+<div><span class="small-link">Privacy</span> · <span class="small-link">Imprint</span></div>
+</footer>
+</div>
+</body>
+</html>
