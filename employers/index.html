@@ -45,6 +45,122 @@ h2{color:var(--navy);font-size:44px;line-height:1.08;margin:0 0 16px;letter-spac
 .footer{background:var(--navy2);color:#c9d1db;padding:26px 96px;display:flex;justify-content:space-between;align-items:center;font-size:12px}.footer .brand img{width:50px}.footer b{color:#fff}.footer span{color:#aeb8c4}
 @media (max-width:980px){body{width:auto}.nav,.section,.hero,.final,.contact,.footer{padding-left:24px!important;padding-right:24px!important}.nav{height:auto;min-height:84px;gap:18px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}.navlinks a:not(.btn){display:none}.hero{grid-template-columns:1fr;gap:30px}.quickbar,.stack,.market3,.research-grid,.workflow-grid,.dimension-grid,.models3,.enable,.memory,.pillar-grid{grid-template-columns:1fr}.dimension-foot{grid-template-columns:1fr}.final{grid-template-columns:1fr}.contact{grid-template-columns:1fr}.contact img{width:210px;height:250px}h1{font-size:44px}h2{font-size:34px}}
 </style>
+
+<style id="responsive-v8-1">
+/* responsive-v8.1 */
+html,body{
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  overflow-x:hidden!important;
+}
+body{width:100%!important}
+.nav,.hero,.section,.final,.contact,.footer{width:100%;max-width:100%}
+.nav>*,.hero>*,.quickbar>*,.stack>*,.market3>*,.research-grid>*,
+.workflow-grid>*,.dimension-grid>*,.models3>*,.enable>*,.memory>*,
+.pillar-grid>*,.final>*,.contact>*{min-width:0}
+img{max-width:100%;height:auto}
+.brand{min-width:0;max-width:100%}
+.brandcopy{min-width:0;overflow-wrap:break-word}
+.navlinks{min-width:0;flex-wrap:wrap;justify-content:flex-end}
+.hero h1,h2,h3,p,.lead,.section-intro,.choice,.quick,.layer,.market-card,
+.research-card,.wf,.dimension,.model,.enable-card,.memory-item,.pillar{
+  overflow-wrap:break-word;
+  word-break:normal;
+}
+.hero-actions{display:flex;flex-wrap:wrap}
+.btn{max-width:100%;white-space:normal;text-align:center}
+.quick,.layer,.market-card,.research-card,.wf,.dimension,.model,.enable-card,
+.memory-item,.pillar,.hero-card,.workflow,.research-wrap,.dimension-wrap,.memory-left,.pillars{
+  min-width:0;
+}
+
+@media (max-width:1200px){
+  .nav{padding-left:48px!important;padding-right:48px!important}
+  .hero{padding:68px 48px 66px!important;gap:38px!important}
+  .section{padding:60px 48px!important}
+  .final{padding:62px 48px!important}
+  .contact{padding:58px 48px!important}
+  .footer{padding:24px 48px!important}
+  h1{font-size:52px!important}
+  .quickbar{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .workflow-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .enable{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .pillar-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+
+@media (max-width:980px){
+  .nav{padding:18px 24px!important;height:auto!important;min-height:0!important}
+  .brand{flex:1 1 auto}
+  .navlinks{flex:0 1 auto}
+  .navlinks a:not(.btn){display:none!important}
+  .hero{grid-template-columns:minmax(0,1fr)!important;padding:56px 24px!important}
+  .hero-card{width:100%}
+  .quickbar,.stack,.market3,.research-grid,.workflow-grid,.dimension-grid,
+  .models3,.enable,.memory,.pillar-grid{
+    grid-template-columns:minmax(0,1fr)!important
+  }
+  .dimension-foot{grid-template-columns:minmax(0,1fr)!important}
+  .final{grid-template-columns:minmax(0,1fr)!important;padding:56px 24px!important}
+  .contact{grid-template-columns:minmax(0,1fr)!important;padding:52px 24px!important}
+  .section{padding:54px 24px!important}
+  .footer{padding:24px!important}
+  .contact img{width:min(260px,100%)!important;height:auto!important;aspect-ratio:260/310;object-fit:cover}
+  .research-wrap,.dimension-wrap,.workflow,.memory-left,.pillars{padding:30px!important}
+  h1{font-size:44px!important}
+  h2{font-size:34px!important}
+}
+
+@media (max-width:640px){
+  .nav{padding:14px 20px!important;gap:12px!important}
+  .brand{width:100%;gap:12px!important}
+  .brand img{width:44px!important;flex:0 0 44px}
+  .brandcopy{font-size:15px!important;line-height:1.25}
+  .brandcopy span{display:block;margin-top:2px}
+  .navlinks{width:100%;display:block!important}
+  .navlinks .btn{display:block;width:100%;padding:13px 16px!important}
+  .hero{padding:44px 20px 46px!important}
+  .hero h1{font-size:38px!important;line-height:1.04!important;letter-spacing:-.025em!important}
+  .lead{font-size:17px!important}
+  .hero-line{font-size:16px!important}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn{width:100%}
+  .hero-card{padding:22px!important;border-radius:10px!important}
+  .hero-card h3{font-size:24px!important}
+  .choice{padding:15px!important}
+  .section{padding:46px 20px!important}
+  h2{font-size:31px!important;line-height:1.1!important}
+  .section-intro{font-size:16px!important;margin-bottom:24px!important}
+  .quick,.layer,.market-card,.research-card,.wf,.dimension,.model,.enable-card,.memory-item,.pillar{
+    padding-left:18px!important;
+    padding-right:18px!important;
+    min-height:0!important;
+  }
+  .research-wrap,.dimension-wrap,.workflow,.memory-left,.pillars{
+    padding:22px!important;
+    border-radius:12px!important;
+  }
+  .workflow-grid{gap:10px!important}
+  .models3,.market3,.research-grid,.dimension-grid,.stack,.quickbar,.enable,.pillar-grid{
+    gap:12px!important
+  }
+  .final{padding:48px 20px!important}
+  .final h2{font-size:32px!important}
+  .final .btn{width:100%}
+  .contact{padding:46px 20px!important;gap:24px!important}
+  .contact img{width:min(240px,100%)!important}
+  .contact .email{font-size:17px!important;overflow-wrap:anywhere}
+  .footer{padding:22px 20px!important;flex-direction:column;align-items:flex-start!important;gap:14px}
+  .footer .brand{width:100%}
+}
+
+@media (max-width:380px){
+  .hero h1{font-size:34px!important}
+  h2,.final h2{font-size:29px!important}
+  .brandcopy{font-size:14px!important}
+  .btn{font-size:13px!important}
+}
+</style>
 </head>
 <body>
 <div class="nav"><a class="brand" href="../"><img src="data:image/png;base64,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" alt="Volker Dahm logo"/><div class="brandcopy">AI Talent Partner <span>/ for Employers</span></div></a><div class="navlinks"><a href="#capability">Capability</a><a href="#sourcing">3D Sourcing</a><a href="#models">Operating Models</a><a href="#memory">Recruiting Memory</a><a class="btn" href="mailto:sales@passionfourpeople.de">Discuss Your Hiring Need</a></div></div>
