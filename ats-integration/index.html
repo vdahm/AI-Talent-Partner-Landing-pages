@@ -44,6 +44,14 @@ h2{color:var(--navy);font-size:43px;line-height:1.08;margin:0 0 16px;letter-spac
 @media(max-width:980px){.nav{padding:18px 24px;height:auto;min-height:0;gap:18px;flex-wrap:wrap}.brand{flex:1 1 auto}.navlinks{flex:0 1 auto}.navlinks a:not(.btn){display:none}.hero{grid-template-columns:minmax(0,1fr);padding:56px 24px}.hero-card{width:100%}.quickbar,.stack,.research-grid,.agentic-row,.models3,.dimension-grid,.memory,.memory-grid,.provider-strip,.audit-grid,.ownership-grid,.commercial{grid-template-columns:minmax(0,1fr)}.dimension-foot{grid-template-columns:minmax(0,1fr)}.final{grid-template-columns:minmax(0,1fr);padding:56px 24px}.contact{grid-template-columns:minmax(0,1fr);padding:52px 24px}.section{padding:54px 24px}.footer{padding:24px}.contact img{width:min(260px,100%);height:auto;aspect-ratio:260/310}.research-wrap,.dimension-wrap,.agentic,.memory-left,.audit,.ownership{padding:30px}h1{font-size:44px}h2{font-size:34px}}
 @media(max-width:640px){.nav{padding:14px 20px;gap:12px}.brand{width:100%;gap:12px}.brand img{width:44px;flex:0 0 44px}.brandcopy{font-size:15px;line-height:1.25}.brandcopy span{display:block;margin-top:2px}.navlinks{width:100%;display:block}.navlinks .btn{display:block;width:100%;padding:13px 16px}.hero{padding:44px 20px 46px}.hero h1{font-size:37px;line-height:1.04;letter-spacing:-.025em}.lead{font-size:17px}.hero-line{font-size:16px}.hero-actions{flex-direction:column;align-items:stretch}.hero-actions .btn{width:100%}.hero-card{padding:22px;border-radius:10px}.hero-card h3{font-size:24px}.choice{padding:15px}.section{padding:46px 20px}h2{font-size:31px;line-height:1.1}.section-intro{font-size:16px;margin-bottom:24px}.quick,.layer,.research-card,.agent,.model,.dimension,.memory-item,.provider,.audit-card,.own,.commercial-card{padding-left:18px;padding-right:18px;min-height:0}.research-wrap,.dimension-wrap,.agentic,.memory-left,.audit,.ownership{padding:22px;border-radius:12px}.models3,.research-grid,.dimension-grid,.stack,.quickbar,.agentic-row,.provider-strip,.audit-grid,.ownership-grid,.commercial{gap:12px}.final{padding:48px 20px}.final h2{font-size:32px}.final .btn{width:100%}.contact{padding:46px 20px;gap:24px}.contact img{width:min(240px,100%)}.contact .email{font-size:17px}.footer{padding:22px 20px;flex-direction:column;align-items:flex-start}.footer .brand{width:100%}}
 </style>
+
+<style id="explainer-links-v1">
+.explain-link-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.explain-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:13px;font-weight:800;color:#B94D3A;background:#fff;border:1px solid #D9DDE2;border-radius:8px;padding:11px 14px}
+.explain-link:hover{text-decoration:underline}
+.explain-link.dark{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#fff}
+@media(max-width:640px){.explain-link-row{flex-direction:column}.explain-link{width:100%;justify-content:center;text-align:center}}
+</style>
 </head>
 <body>
 <div class="nav">
@@ -95,7 +103,7 @@ h2{color:var(--navy);font-size:43px;line-height:1.08;margin:0 0 16px;letter-spac
   <div class="research-wrap">
     <div class="eyebrow" style="color:#e58b78">3D SOURCING</div>
     <h2>One sourcing process. Three connected research dimensions.</h2>
-    <p class="section-intro">3D Sourcing is the research architecture. The candidate is only the first dimension. The process also checks what actually happened around the candidate and what independent evidence and market context support the conclusion.</p>
+    <p class="section-intro">3D Sourcing is the research architecture. The candidate is only the first dimension. The process also checks what actually happened around the candidate and what independent evidence and market context support the conclusion.</p><div class="explain-link-row"><a class="explain-link" href="../ai-sourcing/">AI Sourcing Explained -></a></div>
     <div class="research-grid">
       <div class="research-card"><div class="rnum">01 / CANDIDATE</div><h3>Who is the person?</h3><p>Career, roles, responsibilities, achievements and what the profile itself claims. This creates the first working view, not final proof.</p></div>
       <div class="research-card"><div class="rnum">02 / COMPANY + EVENT</div><h3>What actually happened?</h3><p>Company situation, business events, transactions, restructuring, growth, decline or other context during the relevant period.</p></div>
@@ -109,7 +117,7 @@ h2{color:var(--navy);font-size:43px;line-height:1.08;margin:0 0 16px;letter-spac
   <div class="agentic">
     <div class="eyebrow">HUMAN-GOVERNED AGENTIC RECRUITING</div>
     <h2>Controlled autonomy - with human gates where judgement matters.</h2>
-    <p class="section-intro">The goal is not to put a human behind every AI action. It is to let agents work autonomously between defined checkpoints, then turn each human decision into both quality control and learning for the next iteration.</p>
+    <p class="section-intro">The goal is not to put a human behind every AI action. It is to let agents work autonomously between defined checkpoints, then turn each human decision into both quality control and learning for the next iteration.</p><div class="explain-link-row"><a class="explain-link" href="../human-governed-agentic-recruiting/">Human-Governed Agentic Recruiting Explained -></a></div>
     <div class="agentic-row">
       <div class="agent"><div class="n">01 / UNDERSTAND</div><b>Role + business context</b><span>AI structures the first Sourcing Profile from the role, market and relevant ATS history.</span><div class="gate"><b>HUMAN GATE 1</b>Search calibration</div></div>
       <div class="agent"><div class="n">02 / SOURCE</div><b>Agentic 3D Sourcing</b><span>Search, research, dedupe and candidate-batch creation across Candidate, Company/Event and Market/Evidence.</span><div class="gate"><b>HUMAN GATE 2</b>Candidate + evidence calibration</div></div>
