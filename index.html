@@ -44,7 +44,19 @@
 html,body{width:100%!important;height:auto!important;min-height:100%!important}.page{width:100%!important;height:auto!important;min-height:100vh!important;overflow:visible!important;padding-bottom:28px}.top-rule,.accent-rule{position:fixed;z-index:10}header{position:relative!important;left:auto!important;right:auto!important;top:auto!important;height:auto!important;margin:0 auto;padding:34px 5vw 20px;max-width:1440px}main{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;padding:12px 5vw 36px}.cards{max-width:1120px}.card-link{text-decoration:none;color:inherit;display:block}.card{height:100%}footer{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;max-width:1272px;margin:0 auto;padding:0 5vw 18px}.go{display:inline-block}
 @media(max-width:900px){.cards{grid-template-columns:1fr!important}.hero h1{font-size:44px}.sub{font-size:17px}.context{display:none}.card{grid-template-columns:52px 1fr auto!important}.brand-text{font-size:14px}}
 @media(max-width:560px){header{padding-top:30px}.brand img{width:46px;height:46px}.brand-text{font-size:12px}.brand-text small{font-size:8px}.hero h1{font-size:36px}.cards{margin-top:30px}.card{grid-template-columns:44px 1fr!important}.icon{width:44px;height:44px}.go{grid-column:2;justify-self:start;margin-top:4px}.card-title{font-size:19px}}
-</style></head>
+</style>
+<style id="explainer-router-v1">
+.learn-cards{margin:18px auto 0;max-width:1120px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.learn-card{background:#fff;border:1px solid #E0E4E8;min-height:105px;padding:20px 24px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;position:relative;box-shadow:0 4px 14px rgba(28,45,74,.05);text-decoration:none;color:inherit}
+.learn-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:#B94D3A}
+.learn-copy .k{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1.05px;color:#B94D3A;margin-bottom:6px}
+.learn-copy b{display:block;font-size:20px;color:#1C2D4A;line-height:1.15}
+.learn-copy span{display:block;margin-top:5px;font-size:12.5px;line-height:1.35;color:#626B75}
+.learn-go{border:1.5px solid #1C2D4A;color:#1C2D4A;border-radius:3px;font-size:12px;font-weight:800;padding:10px 12px;white-space:nowrap}
+@media(max-width:900px){.learn-cards{grid-template-columns:1fr!important}}
+@media(max-width:560px){.learn-card{grid-template-columns:1fr!important;min-height:0}.learn-go{justify-self:start}}
+</style>
+</head>
 <body>
 <div class="page">
 <div class="top-rule"></div><div class="accent-rule"></div>
@@ -98,6 +110,16 @@ html,body{width:100%!important;height:auto!important;min-height:100%!important}.
 </div>
 <div class="go">OPEN →</div>
 </div></a>
+</section>
+<section class="learn-cards" aria-label="Learn how the methods work">
+  <a class="learn-card" href="ai-sourcing/">
+    <div class="learn-copy"><div class="k">EXPLAINER</div><b>AI Sourcing Explained</b><span>3D Sourcing, continuous learning, market intelligence and evidence.</span></div>
+    <div class="learn-go">OPEN -></div>
+  </a>
+  <a class="learn-card" href="human-governed-agentic-recruiting/">
+    <div class="learn-copy"><div class="k">EXPLAINER</div><b>Human-Governed Agentic Recruiting</b><span>Controlled autonomy, human gates and transferable recruiting capability.</span></div>
+    <div class="learn-go">OPEN -></div>
+  </a>
 </section>
 </main>
 <footer>
