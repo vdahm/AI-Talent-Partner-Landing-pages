@@ -161,6 +161,14 @@ img{max-width:100%;height:auto}
   .btn{font-size:13px!important}
 }
 </style>
+
+<style id="explainer-links-v1">
+.explain-link-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.explain-link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:13px;font-weight:800;color:#B94D3A;background:#fff;border:1px solid #D9DDE2;border-radius:8px;padding:11px 14px}
+.explain-link:hover{text-decoration:underline}
+.explain-link.dark{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#fff}
+@media(max-width:640px){.explain-link-row{flex-direction:column}.explain-link{width:100%;justify-content:center;text-align:center}}
+</style>
 </head>
 <body>
 <div class="nav"><a class="brand" href="../"><img src="data:image/png;base64,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" alt="Volker Dahm logo"/><div class="brandcopy">AI Talent Partner <span>/ for Employers</span></div></a><div class="navlinks"><a href="#capability">Capability</a><a href="#sourcing">3D Sourcing</a><a href="#models">Operating Models</a><a href="#memory">Recruiting Memory</a><a class="btn" href="mailto:sales@passionfourpeople.de">Discuss Your Hiring Need</a></div></div>
@@ -217,7 +225,7 @@ img{max-width:100%;height:auto}
 <div class="research-wrap">
 <div class="eyebrow" style="color:#e58b78">3D SOURCING</div>
 <h2>Research the person, the event and the market around them.</h2>
-<p class="section-intro">A profile is a starting point, not proof. 3D Sourcing connects candidate research with company/event context and independent market evidence before the process decides what to do next.</p>
+<p class="section-intro">A profile is a starting point, not proof. 3D Sourcing connects candidate research with company/event context and independent market evidence before the process decides what to do next.</p><div class="explain-link-row"><a class="explain-link" href="../ai-sourcing/">AI Sourcing Explained -></a></div>
 <div class="research-grid">
 <div class="research-card"><div class="rnum">01 / CANDIDATE</div><h3>Who is the person?</h3><p>Career, roles, responsibilities, skills, claims, location and the context in which the candidate appears relevant.</p></div>
 <div class="research-card"><div class="rnum">02 / COMPANY &amp; EVENT</div><h3>What actually happened?</h3><p>What changed at the company during the candidate's tenure? Growth, restructuring, refinancing, transformation, product launch or other role-relevant events.</p></div>
@@ -230,7 +238,7 @@ img{max-width:100%;height:auto}
 <section class="section alt">
 <div class="workflow">
 <div class="eyebrow">HUMAN-GOVERNED AGENTIC RECRUITING</div><h2>Controlled autonomy between deliberate human gates.</h2>
-<p class="section-intro">AI should not wait for approval on every action. It also should not make every critical recruiting decision alone. The workflow lets agents operate autonomously between the moments where judgement, accountability or real human communication matter.</p>
+<p class="section-intro">AI should not wait for approval on every action. It also should not make every critical recruiting decision alone. The workflow lets agents operate autonomously between the moments where judgement, accountability or real human communication matter.</p><div class="explain-link-row"><a class="explain-link" href="../human-governed-agentic-recruiting/">Human-Governed Agentic Recruiting Explained -></a></div>
 <div class="workflow-grid">
 <div class="wf"><div class="n">01 / UNDERSTAND</div><b>Role + business + market context</b><span>AI structures the initial Sourcing Profile from the actual hiring problem.</span><div class="gate"><b>HUMAN GATE</b>Search calibration: must-haves, learnable criteria, exclusions.</div></div>
 <div class="wf agent"><div class="n">02 / AGENTIC 3D SOURCE</div><b>Discover + research + dedupe</b><span>AI works across candidate, company/event and market/evidence dimensions.</span><div class="gate"><b>HUMAN GATE</b>Candidate &amp; evidence calibration: GOOD / REVIEW / REJECT - and why.</div></div>
